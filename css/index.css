@@ -35,7 +35,7 @@ body {
   margin: auto;
   animation: load 1000ms infinite 0s ease-in-out;
   animation-direction: alternate;
-  text-shadow: 0 0 3px #e4e4e4;
+  text-shadow: 0 0 3px #d2d2d2;
 }
 @keyframes load {
   0% {
@@ -49,6 +49,7 @@ body {
 }
 #cookies-box {
   background-color: #e4e4e4;
+  width: 100%;
   height: 35px;
   line-height: 32px;
   text-align: center;
@@ -57,16 +58,18 @@ body {
   overflow: hidden;
 }
 #cookies-box span i {
+  width: 5%;
   padding: 0px 10px;
   position: absolute;
   display: fixed;
-  right: 200px;
+  right: 20px;
   cursor: pointer;
   font-weight: bold;
   font-size: 18px;
 }
 #cookies-box p {
   font-weight: 100;
+  width: 90%;
 }
 #cookies-box p a {
   color: #850000;
@@ -104,26 +107,80 @@ body {
   margin: 0px 5px;
 }
 #black-navbar ul .black-navbar-active {
-  background-color: #e4e4e4;
+  background-color: #d2d2d2;
   color: #151515;
 }
 #corporate-list {
   width: 100%;
-  height: 200px;
-  font-size: 20px;
-  background-color: #6d6d6d;
-  font-weight: 400;
+  height: 250px;
+  overflow: hidden;
+  background-color: #d2d2d2;
+  transition: all 500ms ease 0s;
 }
 #corporate-list ul {
-  padding-top: 20px;
+  padding-top: 80px;
   list-style-type: none;
   display: flex;
+  font-size: 15px;
   justify-content: space-around;
+  font-weight: 300;
 }
 #corporate-list ul li {
   cursor: pointer;
+  padding: 5px 10px;
+  font-size: 19px;
   transition: all 400ms ease 0s;
 }
+#corporate-list ul li p {
+  font-size: 13px;
+  font-weight: 100;
+}
 #corporate-list ul li:hover {
-  text-shadow: 0px 0px 10px #151515;
+  text-decoration: underline;
+}
+#corporate-list ul li i {
+  transition: all 300ms ease 0s;
+}
+#corporate-list ul li:hover i {
+  padding-left: 5px;
+  color: #bc0000;
+}
+#Worldwide {
+  width: 100%;
+  height: 500px;
+  font-size: 20px;
+  overflow: hidden;
+  border-bottom: 1px solid #151515;
+  background-color: #d2d2d2;
+  transition: all 500ms ease 0s;
+}
+#Worldwide h2 {
+  font-size: 25px;
+  padding: 40px 0px 20px 40px;
+  font-weight: 400;
+  font-size: 27px;
+}
+#Worldwide ul {
+  margin: 0px auto;
+}
+#Worldwide ul li {
+  display: inline-block;
+  width: 18%;
+  font-weight: 100;
+  font-size: 16px;
+  padding: 10px;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 20px;
+  transition: all 300ms ease 0s;
+}
+#Worldwide ul li a {
+  color: #151515;
+  text-decoration: none;
+  padding: auto 18%;
+}
+#Worldwide ul li:hover {
+  background-color: #e4e4e4;
+  scale: 1.3;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.199);
 }

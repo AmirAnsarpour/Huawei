@@ -18,14 +18,18 @@ $(document).ready(function () {
         $("#two-black-navbar i:last-child").removeClass("bi-chevron-up");
         $("#two-black-navbar i:last-child").addClass("bi-chevron-down");
 
+        $("#Worldwide").addClass("zero-height");
         if ($("#one-black-navbar i:last-child").hasClass("bi-chevron-down")) {
             $("#one-black-navbar i:last-child").addClass("bi-chevron-up");
             $("#one-black-navbar i:last-child").removeClass("bi-chevron-down");
+            $("#corporate-list").removeClass("zero-height");
         }
         else {
             $("#one-black-navbar i:last-child").addClass("bi-chevron-down");
             $("#one-black-navbar i:last-child").removeClass("bi-chevron-up");
+            $("#corporate-list").addClass("zero-height");
         }
+        ////////////////////////////////////////////////////////////////////
     });
 
     // Secend button "#two-black-navbar"
@@ -33,16 +37,21 @@ $(document).ready(function () {
     $($("#two-black-navbar")).click(function () {
         $("#two-black-navbar").toggleClass("black-navbar-active");
         $("#one-black-navbar").removeClass("black-navbar-active");
+
         $("#one-black-navbar i:last-child").removeClass("bi-chevron-up");
         $("#one-black-navbar i:last-child").addClass("bi-chevron-down");
+
+        $("#corporate-list").addClass("zero-height");
 
         if ($("#two-black-navbar i:last-child").hasClass("bi-chevron-down")) {
             $("#two-black-navbar i:last-child").addClass("bi-chevron-up");
             $("#two-black-navbar i:last-child").removeClass("bi-chevron-down");
+            $("#Worldwide").removeClass("zero-height");
         }
         else {
             $("#two-black-navbar i:last-child").addClass("bi-chevron-down");
             $("#two-black-navbar i:last-child").removeClass("bi-chevron-up");
+            $("#Worldwide").addClass("zero-height");
         }
     });
     // #three-black-navbar
