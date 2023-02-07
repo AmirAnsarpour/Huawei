@@ -6,6 +6,7 @@
     padding: 0;
     border: 0;
     outline: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -16,6 +17,10 @@ body {
 
 .hidden {
     display: none;
+}
+
+.zero-height {
+    height: 0 !important;
 }
 
 // loading screen 
@@ -54,6 +59,45 @@ body {
     }
 }
 
+// cookies box 
+#cookies-box {
+    background-color: @color-white;
+    height: 35px;
+    line-height: 32px;
+    text-align: center;
+    position: relative;
+    transition: all 200ms ease 0s;
+    overflow: hidden;
+
+    span {
+        i {
+            padding: 0px 10px;
+            position: absolute;
+            display: fixed;
+            right: 200px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 18px;
+        }
+    }
+
+    p {
+        font-weight: 100;
+
+
+        a {
+            color: rgb(133, 0, 0);
+            text-decoration: none;
+            margin-left: 10px;
+            display: inline;
+
+            i {
+                margin-left: 1px;
+            }
+        }
+    }
+}
+
 // black navbar 
 #black-navbar {
     background-color: @color-black;
@@ -66,6 +110,8 @@ body {
     user-select: none;
 
     ul {
+        width: 70%;
+        margin: 0px auto;
         list-style-type: none;
         display: flex;
         justify-content: end;

@@ -1,33 +1,50 @@
-const corporateBlackNavbar = document.querySelector("#one-black-navbar");
-const onedownMarkBlackNavbar = document.querySelector("#one-black-navbar i:last-child")
+$(document).ready(function () {
 
-const worldwideBlackNavbar = document.querySelector("#two-black-navbar");
-const twodownMarkBlackNavbar = document.querySelector("#two-black-navbar i:last-child")
+    // #cookies-box
+    // #cookies-box span
+    setTimeout(function () {
+        $("#cookies-box").removeClass("zero-height")
+    }, 2000);
+    $($("#cookies-box span")).click(function () {
+        $("#cookies-box").addClass("zero-height");
+    });
 
-const loginBlackNavbar = document.querySelector("#three-black-navbar");
+    // First button "#one-black-navbar"
+    // First button icon  "#one-black-navbar i:last-child"
+    $($("#one-black-navbar")).click(function () {
+        $("#one-black-navbar").toggleClass("black-navbar-active");
+        $("#two-black-navbar").removeClass("black-navbar-active");
 
-corporateBlackNavbar.addEventListener("click", function () {
-    corporateBlackNavbar.classList.toggle("black-navbar-active");
-    worldwideBlackNavbar.classList.remove("black-navbar-active");
-    if (onedownMarkBlackNavbar.classList.contains("bi-chevron-down")) {
-        onedownMarkBlackNavbar.classList.add("bi-chevron-up");
-        onedownMarkBlackNavbar.classList.remove("bi-chevron-down");
-    }
-    else {
-        onedownMarkBlackNavbar.classList.add("bi-chevron-down");
-        onedownMarkBlackNavbar.classList.remove("bi-chevron-up");
-    }
-})
+        $("#two-black-navbar i:last-child").removeClass("bi-chevron-up");
+        $("#two-black-navbar i:last-child").addClass("bi-chevron-down");
 
-worldwideBlackNavbar.addEventListener("click", function () {
-    worldwideBlackNavbar.classList.toggle("black-navbar-active");
-    corporateBlackNavbar.classList.remove("black-navbar-active");
-    if (twodownMarkBlackNavbar.classList.contains("bi-chevron-down")) {
-        twodownMarkBlackNavbar.classList.add("bi-chevron-up");
-        twodownMarkBlackNavbar.classList.remove("bi-chevron-down");
-    }
-    else {
-        twodownMarkBlackNavbar.classList.add("bi-chevron-down");
-        twodownMarkBlackNavbar.classList.remove("bi-chevron-up");
-    }
-})
+        if ($("#one-black-navbar i:last-child").hasClass("bi-chevron-down")) {
+            $("#one-black-navbar i:last-child").addClass("bi-chevron-up");
+            $("#one-black-navbar i:last-child").removeClass("bi-chevron-down");
+        }
+        else {
+            $("#one-black-navbar i:last-child").addClass("bi-chevron-down");
+            $("#one-black-navbar i:last-child").removeClass("bi-chevron-up");
+        }
+    });
+
+    // Secend button "#two-black-navbar"
+    // Secend button icon  "#two-black-navbar i:last-child"
+    $($("#two-black-navbar")).click(function () {
+        $("#two-black-navbar").toggleClass("black-navbar-active");
+        $("#one-black-navbar").removeClass("black-navbar-active");
+        $("#one-black-navbar i:last-child").removeClass("bi-chevron-up");
+        $("#one-black-navbar i:last-child").addClass("bi-chevron-down");
+
+        if ($("#two-black-navbar i:last-child").hasClass("bi-chevron-down")) {
+            $("#two-black-navbar i:last-child").addClass("bi-chevron-up");
+            $("#two-black-navbar i:last-child").removeClass("bi-chevron-down");
+        }
+        else {
+            $("#two-black-navbar i:last-child").addClass("bi-chevron-down");
+            $("#two-black-navbar i:last-child").removeClass("bi-chevron-up");
+        }
+    });
+    // #three-black-navbar
+
+});
