@@ -9,6 +9,9 @@ body {
   background-color: #e4e4e4;
   font-family: 'Kanit', sans-serif;
   font-weight: 500;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 .hidden {
   display: none;
@@ -23,9 +26,6 @@ body {
   height: 100vh;
   color: #141414;
   font-size: 70px;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
 }
 #animate div {
   display: flex;
@@ -86,9 +86,6 @@ body {
   height: 28px;
   color: #d2d2d2;
   font-weight: 100;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
 }
 #black-navbar ul {
   width: 70%;
@@ -169,7 +166,6 @@ body {
   font-weight: 100;
   font-size: 16px;
   padding: 10px;
-  cursor: pointer;
   text-align: center;
   border-radius: 20px;
   transition: all 300ms ease 0s;
@@ -179,8 +175,6 @@ body {
   text-decoration: none;
   padding: auto 18%;
 }
-#Worldwide ul li:hover {
-  background-color: #e4e4e4;
-  scale: 1.3;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.199);
+#Worldwide ul li a:hover {
+  text-decoration: underline;
 }
