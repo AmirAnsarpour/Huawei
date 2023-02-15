@@ -1,5 +1,4 @@
 $(document).ready(function () {
-
     // #cookies-box
     // #cookies-box span
     setTimeout(function () {

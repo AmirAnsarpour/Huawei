@@ -9,9 +9,6 @@ body {
   background-color: #e4e4e4;
   font-family: 'Kanit', sans-serif;
   font-weight: 500;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
 }
 .hidden {
   display: none;
@@ -177,4 +174,66 @@ body {
 }
 #Worldwide ul li a:hover {
   text-decoration: underline;
+}
+#big-images div {
+  position: relative;
+}
+#big-images div img {
+  display: block;
+  margin: 0px auto;
+}
+#big-images div button {
+  position: absolute;
+  top: 50%;
+  right: 25%;
+  padding: 15px 60px;
+  font-weight: 400;
+  font-size: 16px;
+  background-color: transparent;
+  border: 1px solid black;
+}
+#big-images div button:hover {
+  background-color: #c7000b;
+  border: 1px solid #c7000b;
+  color: white;
+}
+#image-album {
+  margin: 40px auto;
+}
+#image-album h2 {
+  font-size: 1.9em;
+  font-weight: 400;
+  text-align: center;
+  padding-bottom: 6px;
+}
+#image-album #image-album-div table {
+  border-collapse: collapse;
+}
+#image-album #image-album-div table td {
+  border: 30px solid black;
+  overflow: hidden;
+  border-radius: 30px;
+}
+#image-album #image-album-div table td img {
+  width: 100%;
+  height: 100%;
+  scale: 1.2;
+  position: relative;
+  transition: all 400ms ease 0s;
+}
+#image-album #image-album-div table td img div {
+  width: 200px;
+  text-align: center;
+  font-size: 30px;
+}
+#image-album #image-album-div table td img div p {
+  color: red;
+}
+#image-album #image-album-div table td img:hover {
+  scale: 1.25;
+}
+@media screen and (max-width: 1950px) {
+  #big-images div img {
+    width: 100%;
+  }
 }
