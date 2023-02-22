@@ -11,12 +11,12 @@
 }
 
 body {
-    background-color: @color-white;
+    // background-color: @color-white;
     font-family: 'Kanit', sans-serif;
     font-weight: 500;
-    // -webkit-user-select: none;
-    // -ms-user-select: none;
-    // user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .hidden {
@@ -29,10 +29,12 @@ body {
 
 // loading screen 
 #animate {
-    position: absolute;
+    position: fixed;
     background-color: rgb(197, 197, 197);
     width: 100%;
     height: 100vh;
+    bottom: 0;
+    top: 0;
     color: rgb(20, 20, 20);
     font-size: 70px;
     z-index: 100;
@@ -226,6 +228,7 @@ body {
 
 }
 
+// big image
 #big-images {
     div {
         position: relative;
@@ -249,11 +252,13 @@ body {
                 background-color: rgb(199, 0, 11);
                 border: 1px solid rgb(199, 0, 11);
                 color: white;
+                cursor: pointer;
             }
         }
     }
 }
 
+// album image
 #image-album {
 
     margin: 40px auto;
@@ -270,39 +275,115 @@ body {
             border-collapse: collapse;
 
             td {
-                border: 30px solid black;
                 overflow: hidden;
+                position: relative;
+                border: 20px solid transparent;
+                cursor: pointer;
                 border-radius: 30px;
+                color: @color-white-darker;
 
                 img {
                     width: 100%;
-                    height: 100%;
-                    scale: 1.2;
-                    position: relative;
+                    scale: 1.05;
                     transition: all 400ms ease 0s;
 
-                    div {
-                        // position: absolute;
-                        width: 200px;
-                        text-align: center;
-                        font-size: 30px;
+                }
 
-                        p {
-                            color: red;
-                        }
+                &:hover img {
+                    filter: brightness(70%) blur(2px) grayscale(60%);
+                    scale: 1.12;
+                }
+
+                div {
+                    position: absolute;
+                    width: 90%;
+                    top: 100%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    opacity: 0;
+                    transition: all 500ms ease 0s;
+
+                    p {
+                        font-size: 0.91em;
                     }
 
-                    &:hover {
-                        scale: 1.25;
+                    h4 {
+                        font-size: 1.1em;
+                        font-weight: 500;
+                        color: @color-white;
                     }
+
+                    a {
+                        display: inline-block;
+                        text-decoration: none;
+                        color: @color-white-darker;
+                    }
+
+                }
+
+                &:hover div {
+                    opacity: 1;
+                    top: 80%;
                 }
             }
         }
     }
 }
 
-@media screen and (max-width: 1950px) {
+// mid image
+#mid-big-images {
+    div {
+        position: relative;
+        overflow: hidden;
+
+        img {
+            display: block;
+            margin: 0px auto;
+        }
+
+        button {
+            position: absolute;
+            top: 70%;
+            right: 30%;
+            padding: 15px 55px;
+            font-weight: 400;
+            font-size: 16px;
+            background-color: transparent;
+            border: 1px solid black;
+
+            &:hover {
+                background-color: rgb(199, 0, 11);
+                border: 1px solid rgb(199, 0, 11);
+                color: white;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+@media all and (max-width:575.98px) {}
+
+@media all and (min-width:576px) and (max-width:767.98px) {}
+
+@media all and (min-width:768px) and (max-width:991.98px) {}
+
+@media all and (min-width:992px) and (max-width:1119.98px) {}
+
+@media all and (min-width:1200px) and (max-width:1399.98px) {}
+
+@media all and (min-width:1400px) {}
+
+
+@media all and (max-width:1950px) {
     #big-images {
+        div {
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    #mid-big-images {
         div {
             img {
                 width: 100%;
