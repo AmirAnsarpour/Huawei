@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    document.documentElement.scrollTop = 0;
     // #cookies-box
     // #cookies-box span
     setTimeout(function () {
@@ -54,5 +55,31 @@ $(document).ready(function () {
         }
     });
     // #three-black-navbar
-
+    ////////////////////////////////////////////////////////////////////////
+    // services
+    $($("#services-icon")).click(function () {
+        $("#services").removeClass("zero-height")
+    })
+    $($("#services #in-services .icon")).click(function () {
+        $("#services").addClass("zero-height")
+    })
+    // go top site 
+    window.addEventListener("scroll", function () {
+        if (document.documentElement.scrollTop > 400) {
+            $("#go-up-site").removeClass("zero-height")
+        }
+        else {
+            $("#go-up-site").addClass("zero-height")
+        }
+    })
+    $($("#go-up-site")).click(function () {
+        document.documentElement.scrollTop = 0;
+    })
+    //footer search box
+    $($("#bar")).mouseenter(function () {
+        $("#hide-search").removeClass("zero-height");
+    })
+    $($("#bar")).mouseleave(function () {
+        $("#hide-search").addClass("zero-height");
+    })
 });
