@@ -435,6 +435,114 @@ hr {
 
 }
 
+// navbar
+#navbar {
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 1px solid @color-white-darker;
+
+    #list {
+        li {
+            cursor: pointer;
+            padding: 20px 10px 20px 10px;
+            border-bottom: 2px solid transparent;
+
+            &:hover {
+                border-bottom: 2px solid @color-red;
+            }
+        }
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-evenly;
+
+
+        li {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+            margin: auto 15px;
+            font-size: 17px;
+            font-weight: 300;
+            // padding: 20px 10px 20px 10px;
+            border-bottom: 1px solid transparent;
+            // cursor: pointer;
+
+            i {
+                margin: 0px 5px 0px 0px;
+            }
+
+            #logo {
+                width: 39%;
+                padding: 0;
+            }
+        }
+
+        #logo {
+            img {
+                width: 60%;
+                padding: 0;
+                margin: 0;
+            }
+        }
+
+    }
+}
+
+#consumer-products {
+    table {
+        border-collapse: collapse;
+
+        tr {
+            td {
+                border: 50px solid transparent;
+
+                a {
+                    display: block;
+                    color: @color-black;
+                    text-align: center;
+                    text-decoration: none;
+
+                    p {
+                        text-decoration: none;
+                        font-weight: 300;
+                        font-size: 20px;
+                    }
+
+                    &:hover p {
+                        text-decoration: underline;
+                    }
+
+                    i {
+                        display: inline-block;
+                        font-size: 50px;
+                    }
+                }
+
+            }
+        }
+    }
+
+    div {
+        background-color: @color-white-darker;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        p {
+            text-align: center;
+            font-size: 20px;
+
+            i {
+                font-size: 40px;
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
 // big image
 #big-images {
     div {
@@ -853,9 +961,9 @@ hr {
 #copyright {
     height: 50px;
     line-height: 50px;
-    font-size: 18px;
+    font-size: 17px;
     color: rgb(89, 87, 87);
-    font-weight: 400;
+    font-weight: 300;
     text-align: center;
     background-color: rgb(230, 230, 230);
 }
