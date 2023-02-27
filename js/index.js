@@ -9,6 +9,13 @@ $(document).ready(function () {
         $("#cookies-box").addClass("zero-height");
     });
 
+    setTimeout(function () {
+        $("#follow-me").removeClass("zero-height")
+    }, 180000);
+    $($("#follow-me")).click(function () {
+        $("#follow-me").addClass("zero-height");
+    });
+
     // First button "#one-black-navbar"
     // First button icon  "#one-black-navbar i:last-child"
     $($("#one-black-navbar")).click(function () {
