@@ -9,12 +9,12 @@ $(document).ready(function () {
         $("#cookies-box").addClass("zero-height");
     });
 
-    setTimeout(function () {
-        $("#follow-me").removeClass("zero-height")
-    }, 180000);
-    $($("#follow-me")).click(function () {
-        $("#follow-me").addClass("zero-height");
-    });
+    // setTimeout(function () {
+    //     $("#follow-me").removeClass("zero-height")
+    // }, 180000);
+    // $($("#follow-me")).click(function () {
+    //     $("#follow-me").addClass("zero-height");
+    // });
 
     // First button "#one-black-navbar"
     // First button icon  "#one-black-navbar i:last-child"
@@ -182,7 +182,6 @@ $(document).ready(function () {
             $("#shop li p i:last-child").addClass("bi-chevron-down");
         })
     })
-
     // black navbar to close navbar
     $("#black-navbar").mouseenter(function () {
         $("#one-navbar-box").addClass("zero-height");
