@@ -61,6 +61,49 @@ hr {
 .hover-underline-animation:hover::before {
   transform: scaleX(1);
 }
+.navbar-class-cus {
+  position: absolute;
+  z-index: 2;
+  background-color: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(3px);
+  width: 100%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: all 200ms linear 0s;
+}
+.navbar-class {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+.navbar-class ul {
+  margin-top: 15px;
+}
+.navbar-class ul li {
+  padding-top: 14px;
+  list-style: none;
+}
+.navbar-class ul li h3 {
+  font-weight: 400;
+  font-size: 19px;
+}
+.navbar-class ul li a {
+  text-decoration: none;
+  color: #595757;
+  font-weight: 300;
+  font-size: 17px;
+}
+.navbar-class ul li a:hover {
+  text-decoration: underline;
+}
+.navbar-class ul li a i {
+  transition: all 300ms ease 0s;
+}
+.navbar-class ul li a:hover i {
+  color: #c7000b;
+  margin-left: 5px;
+}
 #animate {
   position: fixed;
   background-color: #c5c5c5;
@@ -224,7 +267,7 @@ hr {
   text-decoration: underline;
 }
 #cookies-box {
-  background-color: #f5f5f5;
+  background-color: white;
   width: 100%;
   height: 35px;
   line-height: 32px;
@@ -326,7 +369,6 @@ hr {
   height: 500px;
   font-size: 20px;
   overflow: hidden;
-  border-bottom: 1px solid #151515;
   background-color: #f5f5f5;
   transition: all 500ms ease 0s;
 }
@@ -358,81 +400,85 @@ hr {
   text-decoration: underline;
 }
 #navbar {
+  position: sticky;
+  z-index: 5;
+  background-color: white;
+  top: 0px;
+}
+#navbar div {
   display: flex;
   justify-content: space-evenly;
   border-bottom: 1px solid #d2d2d2;
 }
-#navbar #list li {
+#navbar div #list li {
   cursor: pointer;
   padding: 20px 10px 20px 10px;
   border-bottom: 2px solid transparent;
 }
-#navbar #list li:hover {
+#navbar div #list li:hover {
   border-bottom: 2px solid #c7000b;
 }
-#navbar ul {
+#navbar div ul {
   display: flex;
   justify-content: space-evenly;
 }
-#navbar ul li {
+#navbar div ul li {
   display: flex;
   justify-content: center;
   align-items: center;
   list-style: none;
   margin: auto 15px;
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 300;
   border-bottom: 1px solid transparent;
 }
-#navbar ul li i {
+#navbar div ul li i {
   margin: 0px 5px 0px 0px;
 }
-#navbar ul li #logo {
-  width: 39%;
-  padding: 0;
-}
-#navbar ul #logo img {
+#navbar div ul #logo img {
+  cursor: pointer;
   width: 60%;
   padding: 0;
   margin: 0;
 }
-#consumer-products table {
+#one-navbar-box {
+  height: 421px;
+}
+#one-navbar-box table {
   border-collapse: collapse;
 }
-#consumer-products table tr td {
+#one-navbar-box table tr td {
   border: 50px solid transparent;
 }
-#consumer-products table tr td a {
+#one-navbar-box table tr td a {
   display: block;
   color: #151515;
   text-align: center;
   text-decoration: none;
 }
-#consumer-products table tr td a p {
+#one-navbar-box table tr td a p {
   text-decoration: none;
   font-weight: 300;
   font-size: 20px;
 }
-#consumer-products table tr td a:hover p {
+#one-navbar-box table tr td a:hover p {
   text-decoration: underline;
 }
-#consumer-products table tr td a i {
+#one-navbar-box table tr td a i {
   display: inline-block;
   font-size: 50px;
 }
-#consumer-products div {
-  background-color: #d2d2d2;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+#two-navbar-box {
+  height: 418px;
 }
-#consumer-products div p {
-  text-align: center;
-  font-size: 20px;
+#three-navbar-box {
+  height: 378px;
 }
-#consumer-products div p i {
-  font-size: 40px;
-  margin-right: 10px;
+#four-navbar-box {
+  height: 378px;
+}
+#five-navbar-box {
+  height: 298px;
 }
 #big-images div {
   position: relative;
