@@ -27,7 +27,33 @@ hr {
   height: 0 !important;
   opacity: 0 !important;
 }
-@media all and (max-width: 991.98px) {
+@media all and (max-width: 319.98px) {
+  body {
+    overflow: hidden;
+  }
+  #change-screen {
+    display: block !important;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background-color: black;
+    z-index: 99;
+  }
+  #change-screen p {
+    color: yellow;
+    text-align: center;
+    line-height: 95vh;
+    font-size: 10vw;
+  }
+}
+@media all and (min-width: 320px) and (max-width: 991.98px) {
+  .title-hover-box h2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    font-weight: 500;
+  }
   #animate {
     position: fixed;
     background-color: #c5c5c5;
@@ -59,6 +85,139 @@ hr {
       filter: blur(3px);
     }
   }
+  #services-icon {
+    position: fixed;
+    z-index: 90;
+    background-color: rgba(199, 0, 10, 0.65);
+    width: 42px;
+    height: 40px;
+    text-align: center;
+    line-height: 42px;
+    font-size: 30px;
+    color: white;
+    bottom: 105px;
+    right: 0;
+    cursor: pointer;
+    transition: all 300ms linear 0s;
+  }
+  #services-icon:hover {
+    background-color: rgba(231, 0, 12, 0.9);
+  }
+  #go-up-site {
+    position: fixed;
+    z-index: 90;
+    background-color: rgba(136, 136, 136, 0.65);
+    width: 42px;
+    height: 40px;
+    text-align: center;
+    line-height: 42px;
+    font-size: 30px;
+    color: white;
+    bottom: 55px;
+    right: 0;
+    cursor: pointer;
+    transition: all 300ms linear 0s;
+  }
+  #go-up-site:hover {
+    background-color: #525252;
+  }
+  #services {
+    position: fixed;
+    opacity: 1;
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.001);
+    backdrop-filter: blur(0.1px);
+    z-index: 96;
+    transition: all 400ms ease 0s;
+  }
+  #services .icon {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    color: #969696;
+    cursor: pointer;
+    font-size: 25px;
+    transition: all 200ms linear 0s;
+  }
+  #services .icon:hover {
+    color: black;
+  }
+  #services #in-services {
+    position: fixed;
+    border-radius: 10px;
+    z-index: 89;
+    overflow: hidden;
+    width: 95%;
+    padding: 30px;
+    left: 50%;
+    bottom: 40%;
+    transform: translate(-50%, 0);
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(3px);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  }
+  #services #in-services ul {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  #services #in-services ul li {
+    list-style: none;
+  }
+  #services #in-services ul li i {
+    display: block;
+    text-align: center;
+    font-size: 80px;
+  }
+  #services #in-services ul li h2 {
+    font-weight: 400;
+    text-align: center;
+    font-size: 19px;
+  }
+  #services #in-services ul li a {
+    display: block;
+    font-size: 16px;
+    font-weight: 300;
+    text-decoration: none;
+    text-align: center;
+    color: #151515;
+  }
+  #services #in-services ul li a:hover {
+    text-decoration: underline;
+  }
+  #services #in-services ul li button {
+    display: block;
+    margin: 20px auto;
+    width: 150px;
+    height: 40px;
+    font-weight: 500;
+    font-size: 16px;
+    background-color: transparent;
+    border: 1px solid black;
+  }
+  #services #in-services ul li button:hover {
+    background-color: #c7000b;
+    border: 1px solid #c7000b;
+    color: white;
+    cursor: pointer;
+  }
+  #services #bottom-link {
+    display: flex;
+  }
+  #services #bottom-link a {
+    display: inline-block;
+    margin: 30px auto;
+    color: #151515;
+    font-size: 20px;
+    font-weight: 300;
+    text-decoration: none;
+    text-align: center;
+  }
+  #services #bottom-link a:hover {
+    text-decoration: underline;
+  }
   #cookies-box {
     position: fixed;
     opacity: 1;
@@ -66,8 +225,8 @@ hr {
     height: 90vh;
     left: 0;
     top: 0;
-    backdrop-filter: blur(0.5px);
-    z-index: 95;
+    backdrop-filter: blur(0.1px);
+    z-index: 90;
     transition: all 200ms ease 0s;
   }
   #cookies-box #in-cookies-box {
@@ -104,6 +263,35 @@ hr {
   }
   #cookies-box #in-cookies-box p a {
     color: #c7000b;
+  }
+  #top-big-images-mb {
+    position: relative;
+  }
+  #top-big-images-mb img {
+    width: 100%;
+  }
+  #top-big-images-mb button {
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    transform: translate(-50%, 0);
+    padding: 13px 40px;
+    font-weight: 400;
+    font-size: 16px;
+    background-color: transparent;
+    border: 1px solid black;
+  }
+  #top-big-images-mb button:hover {
+    background-color: #c7000b;
+    border: 1px solid #c7000b;
+    color: white;
+    cursor: pointer;
+  }
+  #mid-big-images-mb {
+    position: relative;
+  }
+  #mid-big-images-mb img {
+    width: 100%;
   }
 }
 @media all and (min-width: 992px) {
