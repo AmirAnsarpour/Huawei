@@ -25,7 +25,7 @@
         </div>
     </div>
 
-    <div id="services" class="zero-height">
+    <div id="services" class="zero-height d-none d-lg-block">
         <div id="in-services" class="container">
             <i class="bi bi-x-lg icon"></i>
             <div class="title-hover-box">
@@ -63,7 +63,7 @@
         </div>
     </div>
 
-    <div id="follow-me" class="zero-height">
+    <div id="follow-me" class="zero-height d-none d-lg-block">
         <div id="in-follow-me" class="container">
             <i class="bi bi-x-lg icon"></i>
             <span>Hi,<br> my name is:</span>
@@ -82,16 +82,19 @@
     <div id="services-icon" class="d-none d-lg-block">
         <i class="bi bi-headset"></i>
     </div>
-    <div id="go-up-site" class="zero-height">
+    <div id="go-up-site" class="zero-height d-none d-lg-block">
         <i class="bi bi-chevron-double-up"></i>
     </div>
     <!-- cookies -->
-    <div id="cookies-box" class="zero-height d-none d-lg-block">
-        <span><i class="bi bi-x-lg"></i></span>
-        <p>This site uses cookies. By continuing to browse the site you are agreeing to our use of cookies. <a
-                class="d-none d-lg-inline" target="_blank" href="https://github.com/AmirAnsarpour">
-                Read our privacy policy <i class="bi bi-chevron-right"></i></a>
-        </p>
+    <div id="cookies-box" class="zero-height">
+        <div id="in-cookies-box">
+
+            <span><i class="bi bi-x-lg"></i></span>
+            <p>This site uses cookies. By continuing to browse the site you are agreeing to our use of cookies. <a
+                    target="_blank" href="https://github.com/AmirAnsarpour">
+                    Read our privacy policy</a>
+            </p>
+        </div>
     </div>
     <!-- black navbar -->
     <div id="black-navbar" class="d-none d-lg-block">
@@ -104,7 +107,7 @@
         </ul>
     </div>
     <!-- corporate -->
-    <div id="corporate-list" class="container-fluid zero-height">
+    <div id="corporate-list" class="container-fluid zero-height d-none d-lg-block">
         <ul class="">
             <li><strong>Corporate</strong></i>
                 <p>Corporate news and information</p>
@@ -124,7 +127,7 @@
         </ul>
     </div>
     <!-- Worldwide -->
-    <div id="Worldwide" class="zero-height">
+    <div id="Worldwide" class="zero-height d-none d-lg-block">
         <div class="container">
             <h2>Select a Country or Region</h2>
             <ul>
@@ -180,15 +183,15 @@
                 <li id="five-navbar">About Huawei</li>
             </ul>
             <ul id="shop">
-                <li>
+                <li id="shop-shop">
                     <p><i class="bi bi-basket3"></i>Buy<i class="bi bi-chevron-down"></i></p>
                 </li>
-                <li><i class="bi bi-search"></i></li>
+                <li><i class="bi bi-search" id="search-top-icon"></i></li>
             </ul>
         </div>
     </div>
     <!-- one  -->
-    <div id="one-navbar-box" class="zero-height navbar-class-cus">
+    <div id="one-navbar-box" class="zero-height navbar-class-cus d-none d-lg-flex">
         <table class="container">
             <tr>
                 <td>
@@ -245,7 +248,7 @@
         </table>
     </div>
     <!-- two  -->
-    <div id="two-navbar-box" class="zero-height navbar-class-cus">
+    <div id="two-navbar-box" class="zero-height navbar-class-cus d-none d-lg-flex">
         <div class="container navbar-class">
             <ul>
                 <li>
@@ -293,7 +296,7 @@
         </div>
     </div>
     <!-- three  -->
-    <div id="three-navbar-box" class="zero-height navbar-class-cus">
+    <div id="three-navbar-box" class="zero-height navbar-class-cus d-none d-lg-flex">
         <div class="container navbar-class">
             <ul>
                 <li>
@@ -342,7 +345,7 @@
         </div>
     </div>
     <!-- four  -->
-    <div id="four-navbar-box" class="zero-height navbar-class-cus">
+    <div id="four-navbar-box" class="zero-height navbar-class-cus d-none d-lg-flex">
         <div class="container navbar-class">
             <ul>
                 <li>
@@ -378,7 +381,7 @@
         </div>
     </div>
     <!-- five  -->
-    <div id="five-navbar-box" class="zero-height navbar-class-cus">
+    <div id="five-navbar-box" class="zero-height navbar-class-cus d-none d-lg-flex">
         <div class="container navbar-class">
             <ul>
                 <li>
@@ -408,6 +411,13 @@
                 <li><a href="#">Publications</a></li>
                 <li><a href="#">See More<i class="bi bi-chevron-right"></i></a></li>
             </ul>
+        </div>
+    </div>
+    <!-- search box -->
+    <div id="navbar-search-box" class="zero-height  d-none d-lg-block">
+        <div id="navbar-search">
+            <input id="searchbar-top" type="text" placeholder="Search huawei.com">
+            <i class="bi bi-search"></i>
         </div>
     </div>
     <!-- big image slider -->
@@ -498,7 +508,6 @@
             <img src="images/mid-big-image.png">
         </div>
     </div>
-
     <!-- news and events  -->
     <div id="news-box" class="container-fluid d-none d-lg-block">
         <div class="title-hover-box">
@@ -668,7 +677,7 @@
         </div>
     </div>
     <!-- copyright -->
-    <div id="copyright">
+    <div id="copyright" class="d-none d-lg-block">
         <p>©2023 Huawei Technologies Co, Ltd.</p>
     </div>
 
