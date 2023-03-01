@@ -21,6 +21,7 @@ body {
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    scrollbar-width: thin;
 }
 
 hr {
@@ -39,6 +40,44 @@ hr {
     opacity: 0 !important;
 }
 
+// title hover animation class
+.title-hover-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.hover-underline-animation {
+    font-size: 1.9em;
+    font-weight: 400;
+    text-align: center;
+    padding-bottom: 6px;
+    display: inline-block;
+    position: relative;
+    transition: all 300ms ease 0s;
+}
+
+.hover-underline-animation:hover {
+    color: rgb(72, 72, 72);
+}
+
+.hover-underline-animation::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    border-radius: 30px;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: @color-red;
+    transform: scaleX(0.4);
+    transition: transform 300ms ease 0s;
+}
+
+
+
 @media all and (max-width:319.98px) {
     body {
         overflow: hidden;
@@ -53,7 +92,8 @@ hr {
         z-index: 99;
 
         p {
-            color: yellow;
+            color: rgb(208, 0, 0);
+            text-shadow: 0px 0px 10px rgba(255, 0, 0, 0.45);
             text-align: center;
             line-height: 95vh;
             font-size: 10vw;
@@ -62,6 +102,8 @@ hr {
 }
 
 @media all and (min-width:320px) and (max-width:991.98px) {
+
+
     .title-hover-box {
         h2 {
             width: 100%;
@@ -124,6 +166,126 @@ hr {
 
         &:hover {
             background-color: rgba(231, 0, 12, 0.9);
+        }
+    }
+
+    #services-mb {
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        z-index: 97;
+        overflow: hidden;
+        transition: all 400ms ease 0s;
+
+        .icon-services {
+            position: absolute;
+            top: 5px;
+            right: 10px;
+            color: rgb(150, 150, 150);
+            cursor: pointer;
+            font-size: 25px;
+            transition: all 200ms linear 0s;
+
+            &:hover {
+                color: black;
+            }
+        }
+
+        #in-services-mb {
+            background-color: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(3px);
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.418);
+            padding: 40px 0px;
+            border-radius: 15px;
+            width: 95%;
+            height: 95vh;
+            position: relative;
+            z-index: 98;
+            overflow: auto;
+            scrollbar-color: transparent transparent;
+            scrollbar-width: thin;
+            transition: all 400ms ease 0s;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+
+            h2 {
+                font-weight: 300;
+            }
+
+            ul {
+                display: flex;
+                justify-content: space-around;
+                align-items: end;
+
+                li {
+                    list-style: none;
+                    font-size: 13px;
+
+                    i {
+                        display: block;
+                        text-align: center;
+                        font-size: 80px;
+                    }
+
+                    h2 {
+                        font-weight: 400;
+                        text-align: center;
+                        font-size: 19px;
+                    }
+
+                    a {
+                        display: block;
+                        font-size: 16px;
+                        font-weight: 300;
+                        text-decoration: none;
+                        text-align: center;
+                        color: @color-black;
+
+                        &:hover {
+                            text-decoration: underline;
+                        }
+
+                    }
+
+                    button {
+                        display: block;
+                        margin: 20px auto;
+                        width: 150px;
+                        height: 40px;
+                        font-weight: 500;
+                        font-size: 16px;
+                        background-color: transparent;
+                        border: 1px solid black;
+
+                        &:hover {
+                            background-color: @color-red;
+                            border: 1px solid @color-red;
+                            color: white;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+
+            #bottom-link {
+                display: flex;
+
+                a {
+                    display: inline-block;
+                    margin: 30px auto;
+                    color: @color-black;
+                    font-size: 20px;
+                    font-weight: 300;
+                    text-decoration: none;
+                    text-align: center;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+
+            }
         }
     }
 
@@ -228,8 +390,109 @@ hr {
         }
     }
 
+    #image-album-mb {
+        margin: 30px auto;
+
+        h2 {
+            font-weight: 300;
+        }
+
+        #scroll-mb {
+            margin: 45px auto;
+            width: 95%;
+            height: 46vw;
+            overflow: hidden;
+            position: relative;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+
+            .carousel-slide {
+                display: flex;
+
+                img {
+                    height: 46vw;
+                }
+            }
+
+            .carousel-mb-icon {
+                z-index: 10;
+                position: absolute;
+                top: 45%;
+                font-size: 30px;
+                color: rgba(255, 255, 255, 0.2);
+                cursor: pointer;
+                transition: all 300ms ease 0s;
+
+            }
+
+            #prevBtn {
+                left: 5%;
+            }
+
+            #nextBtn {
+                right: 5%;
+            }
+
+            &:hover .carousel-mb-icon {
+                color: white;
+            }
+        }
+
+        #image-album-md-div {
+
+            .image-album-flex {
+                display: flex;
+                justify-content: space-around;
+
+                >div {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    text-decoration: none;
+                    margin: 10px;
+                    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+                    cursor: pointer;
+
+                    img {
+                        width: 100%;
+                        // border-radius: 20px 20px 0px 0px;
+                        transition: all 300ms ease 0s;
+
+                        &:hover {
+                            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.8);
+                            filter: brightness(40%)
+                        }
+                    }
+
+                    .album-div-mb {
+                        padding: 10px;
+                        background-color: @color-black;
+                        display: flex;
+                        flex-direction: column;
+                        // border-radius: 0px 0px 10px 10px;
+
+                        p {
+                            color: white;
+                            margin-left: 10px;
+                            font-size: 13px;
+                            font-weight: 300;
+                        }
+
+                        h4 {
+                            margin-left: 10px;
+                            font-size: 16px;
+                            font-weight: 500;
+                            color: @color-white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
     #mid-big-images-mb {
-        position: relative;
+        display: block;
+        margin: 30px 0px;
 
         img {
             width: 100%;
@@ -238,43 +501,6 @@ hr {
 }
 
 @media all and (min-width:992px) {
-
-    // title hover animation class
-    .title-hover-box {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        margin-bottom: 10px;
-    }
-
-    .hover-underline-animation {
-        font-size: 1.9em;
-        font-weight: 400;
-        text-align: center;
-        padding-bottom: 6px;
-        display: inline-block;
-        position: relative;
-        transition: all 300ms ease 0s;
-    }
-
-    .hover-underline-animation:hover {
-        color: rgb(72, 72, 72);
-    }
-
-    .hover-underline-animation::before {
-        content: "";
-        position: absolute;
-        display: block;
-        width: 100%;
-        border-radius: 30px;
-        height: 2px;
-        bottom: 0;
-        left: 0;
-        background-color: @color-red;
-        transform: scaleX(0.4);
-        transition: transform 300ms ease 0s;
-    }
-
     .hover-underline-animation:hover::before {
         transform: scaleX(1);
     }
@@ -482,6 +708,7 @@ hr {
 
     #services {
         position: fixed;
+        overflow: hidden;
         opacity: 1;
         width: 100%;
         height: 100vh;
@@ -492,7 +719,7 @@ hr {
         z-index: 96;
         transition: all 400ms ease 0s;
 
-        .icon {
+        .icon-services {
             position: absolute;
             top: 5px;
             right: 10px;
@@ -500,11 +727,12 @@ hr {
             cursor: pointer;
             font-size: 25px;
             transition: all 200ms linear 0s;
+
+            &:hover {
+                color: black;
+            }
         }
 
-        .icon:hover {
-            color: black;
-        }
 
         #in-services {
             position: fixed;
@@ -572,26 +800,26 @@ hr {
                     }
                 }
             }
-        }
 
-        #bottom-link {
-            display: flex;
+            #bottom-link {
+                display: flex;
 
-            a {
-                display: inline-block;
-                margin: 30px auto;
-                color: @color-black;
-                font-size: 20px;
-                font-weight: 300;
-                text-decoration: none;
-                text-align: center;
+                a {
+                    display: inline-block;
+                    margin: 30px auto;
+                    color: @color-black;
+                    font-size: 20px;
+                    font-weight: 300;
+                    text-decoration: none;
+                    text-align: center;
 
-                &:hover {
-                    text-decoration: underline;
+                    &:hover {
+                        text-decoration: underline;
+                    }
                 }
             }
-
         }
+
     }
 
     // cookies box 
@@ -599,7 +827,7 @@ hr {
         background-color: rgba(0, 0, 0, 0.85);
         color: white;
         position: fixed;
-        z-index: 91;
+        z-index: 99;
         bottom: 0;
         width: 100%;
         height: 45px;

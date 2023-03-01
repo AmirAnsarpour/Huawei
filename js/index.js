@@ -2,12 +2,12 @@ $(document).ready(function () {
     document.documentElement.scrollTop = 0;
     // #cookies-box
     // #cookies-box span
-    setTimeout(function () {
-        $("#cookies-box").removeClass("zero-height")
-    }, 2000);
-    $($("#cookies-box span")).click(function () {
-        $("#cookies-box").addClass("zero-height");
-    });
+    // setTimeout(function () {
+    //     $("#cookies-box").removeClass("zero-height")
+    // }, 2000);
+    // $($("#cookies-box span")).click(function () {
+    //     $("#cookies-box").addClass("zero-height");
+    // });
 
     // setTimeout(function () {
     //     $("#follow-me").removeClass("zero-height")
@@ -15,7 +15,41 @@ $(document).ready(function () {
     // $($("#follow-me")).click(function () {
     //     $("#follow-me").addClass("zero-height");
     // });
+    // carousel slider mobile
+    let counter = 1;
+    let size = $(".carousel-slide img")[0].clientWidth;
+    let carouselSlide = $(".carousel-slide");
+    let carouselImages = $(".carousel-slide img");
+    let prevBtn = $("#prevBtn");
+    let nextBtn = $("#nextBtn");
 
+    carouselSlide.css("transform", "translateX(" + (-size * counter) + "px)");
+
+    $(nextBtn).click(function () {
+        if (counter >= carouselImages.length - 1) return;
+        carouselSlide.css("transition", "transform 0.6s ease-in-out")
+        counter++;
+        carouselSlide.css("transform", "translateX(" + (-size * counter) + "px)");
+    });
+
+    $(prevBtn).click(function () {
+        if (counter <= 0) return;
+        carouselSlide.css("transition", "transform 0.6s ease-in-out")
+        counter--;
+        carouselSlide.css("transform", "translateX(" + (-size * counter) + "px)");
+    });
+    carouselSlide.addEventListener("transitionend", function () {
+        if (carouselImages[counter].id === "lastClone") {
+            carouselSlide.style.transition = "none";
+            counter = carouselImages.length - 1;
+            carouselSlide.style.transform = "translateX(" + (-size * counter) + "px)";
+        }
+        if (carouselImages[counter].id === "firstClone") {
+            carouselSlide.style.transition = "none";
+            counter = carouselImages.length - counter;
+            carouselSlide.style.transform = "translateX(" + (-size * counter) + "px)";
+        }
+    })
     // First button "#one-black-navbar"
     // First button icon  "#one-black-navbar i:last-child"
     $($("#one-black-navbar")).click(function () {
@@ -66,9 +100,11 @@ $(document).ready(function () {
     // services
     $($("#services-icon")).click(function () {
         $("#services").removeClass("zero-height")
+        $("#services-mb").removeClass("zero-height")
     })
-    $($("#services #in-services .icon")).click(function () {
+    $($(".icon-services")).click(function () {
         $("#services").addClass("zero-height")
+        $("#services-mb").addClass("zero-height")
     })
     // go top site 
     window.addEventListener("scroll", function () {
