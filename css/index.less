@@ -199,10 +199,9 @@ hr {
             border-radius: 15px;
             width: 95%;
             height: 95vh;
+            overflow: auto;
             position: relative;
             z-index: 98;
-            overflow: auto;
-            // scrollbar-color: transparent transparent;
             scrollbar-width: thin;
             transition: all 400ms ease 0s;
             left: 50%;
@@ -708,7 +707,7 @@ hr {
         #bar-mb {
             margin: 10px auto;
             display: block;
-            width: 565px;
+            width: 100%;
             border: 1px solid @color-white-darker;
             background-color: white;
             transition: all 400ms ease 0s;
@@ -716,15 +715,13 @@ hr {
             #searchbar-mb {
                 padding: 0px 0px 0px 15px;
                 height: 45px;
-                width: 500px;
+                width: 85%;
                 font-size: 16px;
-
             }
 
             i {
-                border-left: 1px solid @color-white-darker;
                 padding-left: 20px;
-                font-size: 18px;
+                font-size: 16px;
             }
 
         }
