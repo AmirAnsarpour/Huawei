@@ -2,12 +2,12 @@ $(document).ready(function () {
     document.documentElement.scrollTop = 0;
     // #cookies-box
     // #cookies-box span
-    setTimeout(function () {
-        $("#cookies-box").removeClass("zero-height")
-    }, 2000);
-    $($("#cookies-box span")).click(function () {
-        $("#cookies-box").addClass("zero-height");
-    });
+    // setTimeout(function () {
+    //     $("#cookies-box").removeClass("zero-height")
+    // }, 2000);
+    // $($("#cookies-box span")).click(function () {
+    //     $("#cookies-box").addClass("zero-height");
+    // });
 
     // setTimeout(function () {
     //     $("#follow-me").removeClass("zero-height")
@@ -207,5 +207,136 @@ $(document).ready(function () {
     })
     $($("#bar")).mouseleave(function () {
         $("#hide-search").addClass("zero-height");
+    })
+    //footer mobile
+    // one 
+    $($(".footer-mb-class")[0]).click(function () {
+        $($(".answer")[0]).toggleClass("zero-height");
+        $($(".answer")[1]).addClass("zero-height");
+        $($(".answer")[2]).addClass("zero-height");
+        $($(".answer")[3]).addClass("zero-height");
+        $($(".answer")[4]).addClass("zero-height");
+
+        if ($("#one-quest i").hasClass("bi-chevron-down")) {
+            $("#one-quest i").addClass("bi-chevron-up");
+            $("#one-quest i").removeClass("bi-chevron-down");
+
+            $("#two-quest i").removeClass("bi-chevron-up");
+            $("#two-quest i").addClass("bi-chevron-down");
+            $("#three-quest i").removeClass("bi-chevron-up");
+            $("#three-quest i").addClass("bi-chevron-down");
+            $("#four-quest i").removeClass("bi-chevron-up");
+            $("#four-quest i").addClass("bi-chevron-down");
+            $("#five-quest i").removeClass("bi-chevron-up");
+            $("#five-quest i").addClass("bi-chevron-down");
+        }
+        else {
+            $("#one-quest i").addClass("bi-chevron-down");
+            $("#one-quest i").removeClass("bi-chevron-up");
+        }
+    })
+    // two 
+    $($(".footer-mb-class")[1]).click(function () {
+        $($(".answer")[0]).addClass("zero-height");
+        $($(".answer")[1]).toggleClass("zero-height");
+        $($(".answer")[2]).addClass("zero-height");
+        $($(".answer")[3]).addClass("zero-height");
+        $($(".answer")[4]).addClass("zero-height");
+
+        if ($("#two-quest i").hasClass("bi-chevron-down")) {
+            $("#two-quest i").addClass("bi-chevron-up");
+            $("#two-quest i").removeClass("bi-chevron-down");
+
+            $("#one-quest i").removeClass("bi-chevron-up");
+            $("#one-quest i").addClass("bi-chevron-down");
+            $("#three-quest i").removeClass("bi-chevron-up");
+            $("#three-quest i").addClass("bi-chevron-down");
+            $("#four-quest i").removeClass("bi-chevron-up");
+            $("#four-quest i").addClass("bi-chevron-down");
+            $("#five-quest i").removeClass("bi-chevron-up");
+            $("#five-quest i").addClass("bi-chevron-down");
+        }
+        else {
+            $("#two-quest i").addClass("bi-chevron-down");
+            $("#two-quest i").removeClass("bi-chevron-up");
+        }
+    })
+    // three
+    $($(".footer-mb-class")[2]).click(function () {
+        $($(".answer")[0]).addClass("zero-height");
+        $($(".answer")[1]).addClass("zero-height");
+        $($(".answer")[2]).toggleClass("zero-height");
+        $($(".answer")[3]).addClass("zero-height");
+        $($(".answer")[4]).addClass("zero-height");
+
+        if ($("#three-quest i").hasClass("bi-chevron-down")) {
+            $("#three-quest i").addClass("bi-chevron-up");
+            $("#three-quest i").removeClass("bi-chevron-down");
+
+            $("#one-quest i").removeClass("bi-chevron-up");
+            $("#one-quest i").addClass("bi-chevron-down");
+            $("#two-quest i").removeClass("bi-chevron-up");
+            $("#two-quest i").addClass("bi-chevron-down");
+            $("#four-quest i").removeClass("bi-chevron-up");
+            $("#four-quest i").addClass("bi-chevron-down");
+            $("#five-quest i").removeClass("bi-chevron-up");
+            $("#five-quest i").addClass("bi-chevron-down");
+        }
+        else {
+            $("#three-quest i").addClass("bi-chevron-down");
+            $("#three-quest i").removeClass("bi-chevron-up");
+        }
+    })
+    // four 
+    $($(".footer-mb-class")[3]).click(function () {
+        $($(".answer")[0]).addClass("zero-height");
+        $($(".answer")[1]).addClass("zero-height");
+        $($(".answer")[2]).addClass("zero-height");
+        $($(".answer")[3]).toggleClass("zero-height");
+        $($(".answer")[4]).addClass("zero-height");
+
+        if ($("#four-quest i").hasClass("bi-chevron-down")) {
+            $("#four-quest i").addClass("bi-chevron-up");
+            $("#four-quest i").removeClass("bi-chevron-down");
+
+            $("#one-quest i").removeClass("bi-chevron-up");
+            $("#one-quest i").addClass("bi-chevron-down");
+            $("#two-quest i").removeClass("bi-chevron-up");
+            $("#two-quest i").addClass("bi-chevron-down");
+            $("#three-quest i").removeClass("bi-chevron-up");
+            $("#three-quest i").addClass("bi-chevron-down");
+            $("#five-quest i").removeClass("bi-chevron-up");
+            $("#five-quest i").addClass("bi-chevron-down");
+        }
+        else {
+            $("#four-quest i").addClass("bi-chevron-down");
+            $("#four-quest i").removeClass("bi-chevron-up");
+        }
+    })
+    // five     
+    $($(".footer-mb-class")[4]).click(function () {
+        $($(".answer")[0]).addClass("zero-height");
+        $($(".answer")[1]).addClass("zero-height");
+        $($(".answer")[2]).addClass("zero-height");
+        $($(".answer")[3]).addClass("zero-height");
+        $($(".answer")[4]).toggleClass("zero-height");
+
+        if ($("#five-quest i").hasClass("bi-chevron-down")) {
+            $("#five-quest i").addClass("bi-chevron-up");
+            $("#five-quest i").removeClass("bi-chevron-down");
+
+            $("#one-quest i").removeClass("bi-chevron-up");
+            $("#one-quest i").addClass("bi-chevron-down");
+            $("#two-quest i").removeClass("bi-chevron-up");
+            $("#two-quest i").addClass("bi-chevron-down");
+            $("#three-quest i").removeClass("bi-chevron-up");
+            $("#three-quest i").addClass("bi-chevron-down");
+            $("#four-quest i").removeClass("bi-chevron-up");
+            $("#four-quest i").addClass("bi-chevron-down");
+        }
+        else {
+            $("#five-quest i").addClass("bi-chevron-down");
+            $("#five-quest i").removeClass("bi-chevron-up");
+        }
     })
 });

@@ -496,12 +496,12 @@ hr {
   #copyright a:hover {
     color: #005ebd;
   }
-  #news-box-mb #in-news-box {
+  #news-box-mb #in-news-box-mb {
     display: flex;
     justify-content: space-around;
     flex-direction: column;
   }
-  #news-box-mb #in-news-box > div {
+  #news-box-mb #in-news-box-mb > div {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -511,45 +511,125 @@ hr {
     cursor: pointer;
     transition: all 300ms ease 0s;
   }
-  #news-box-mb #in-news-box > div img {
+  #news-box-mb #in-news-box-mb > div img {
     width: 100%;
     transition: all 300ms ease 0s;
   }
-  #news-box-mb #in-news-box > div:hover {
+  #news-box-mb #in-news-box-mb > div:hover {
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.8);
     filter: brightness(40%);
   }
-  #news-box-mb #in-news-box > div .album-div-mb {
+  #news-box-mb #in-news-box-mb > div .album-div-mb {
     padding: 10px;
     background-color: #474747;
     display: flex;
     flex-direction: column;
   }
-  #news-box-mb #in-news-box > div .album-div-mb h2 {
+  #news-box-mb #in-news-box-mb > div .album-div-mb h2 {
     margin-left: 10px;
     margin: 5px 0px;
     font-size: 18px;
     font-weight: 500;
     color: #f5f5f5;
   }
-  #news-box-mb #in-news-box > div .album-div-mb span {
+  #news-box-mb #in-news-box-mb > div .album-div-mb span {
     color: #bababa;
     display: block;
     font-size: 14px;
   }
-  #news-box-mb #in-news-box > div .album-div-mb span i {
+  #news-box-mb #in-news-box-mb > div .album-div-mb span i {
     padding: 4px 7px 0px 10px;
   }
-  #news-box-mb #in-news-box > div .album-div-mb p {
+  #news-box-mb #in-news-box-mb > div .album-div-mb p {
     margin: 5px 0px;
     color: white;
     margin-left: 10px;
     font-size: 15px;
     font-weight: 300;
   }
-}
-.orange-nav ul {
-  list-style-image: url("");
+  #news-box-mb #in-news-box-mb > div #overflow-hidden-news-mb {
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    background-color: #f2f2f2;
+    overflow: auto;
+    cursor: pointer;
+    transition: all 400ms ease 0s;
+  }
+  #news-box-mb #in-news-box-mb > div #overflow-hidden-news-mb:hover {
+    background-color: #e8e8e8;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  }
+  #news-box-mb #in-news-box-mb > div #overflow-hidden-news-mb a {
+    display: block;
+    text-decoration: none;
+    color: #151515;
+    margin: 20px 30px;
+  }
+  #news-box-mb #in-news-box-mb > div #overflow-hidden-news-mb a:hover {
+    color: #c7000b;
+  }
+  #news-box-mb #in-news-box-mb > div #overflow-hidden-news-mb a p {
+    font-size: 18px;
+  }
+  #news-box-mb #in-news-box-mb > div #overflow-hidden-news-mb a p span {
+    margin: 0px 0px 0px 15px;
+    color: #505050;
+    display: block;
+    font-size: 13px;
+  }
+  #footer-mb {
+    margin-top: 10px;
+    padding-top: 4px;
+    background-color: #f2f2f2;
+  }
+  #footer-mb .footer-mb-class {
+    border-bottom: 1px solid #e6e6e6;
+    cursor: pointer;
+    position: relative;
+  }
+  #footer-mb .footer-mb-class h3 {
+    margin: 10px;
+    text-align: center;
+    font-weight: 400;
+  }
+  #footer-mb .footer-mb-class i {
+    position: absolute;
+    color: #000000;
+    margin: 0px 10px;
+    right: 2px;
+    top: 2px;
+  }
+  #footer-mb #one-answer {
+    height: 255px;
+  }
+  #footer-mb #two-answer {
+    height: 80px;
+  }
+  #footer-mb #three-answer {
+    height: 185px;
+  }
+  #footer-mb #four-answer {
+    height: 150px;
+  }
+  #footer-mb #five-answer {
+    height: 185px;
+  }
+  #footer-mb .answer {
+    overflow: hidden;
+    transition: all 200ms linear 0s;
+  }
+  #footer-mb .answer div a {
+    text-align: center;
+    display: block;
+    color: black;
+    font-weight: 300;
+    text-decoration: none;
+    margin: 10px 20px;
+    border-bottom: 1px solid #e6e6e6;
+  }
+  #footer-mb .answer div a:hover {
+    text-decoration: underline;
+  }
 }
 @media all and (min-width: 992px) {
   .hover-underline-animation:hover::before {
@@ -1263,21 +1343,6 @@ hr {
     color: #505050;
     display: block;
     font-size: 13px;
-  }
-  #more button {
-    display: block;
-    margin: 0px auto 20px auto;
-    padding: 8px 70px;
-    font-weight: 400;
-    font-size: 16px;
-    background-color: transparent;
-    border: 1px solid black;
-  }
-  #more button:hover {
-    background-color: #c7000b;
-    border: 1px solid #c7000b;
-    color: white;
-    cursor: pointer;
   }
   #footer {
     background-color: #f2f2f2;

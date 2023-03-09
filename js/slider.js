@@ -12,13 +12,6 @@ window.addEventListener("resize", function () {
     carouselSlide.style.transform = "translateX(" + (-size * counter) + "px)";
 })
 
-// setInterval(function () {
-//     if (counter >= carouselImages.length - 1) return;
-//     carouselSlide.style.transition = "transform 0.6s ease-in-out";
-//     counter++;
-//     carouselSlide.style.transform = "translateX(" + (-size * counter) + "px)";
-// }, 8000);
-
 nextBtn.addEventListener("click", function () {
     if (counter >= carouselImages.length - 1) return;
     carouselSlide.style.transition = "transform 0.6s ease-in-out";

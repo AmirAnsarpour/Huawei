@@ -603,7 +603,7 @@ hr {
     }
 
     #news-box-mb {
-        #in-news-box {
+        #in-news-box-mb {
             display: flex;
             justify-content: space-around;
             flex-direction: column;
@@ -659,15 +659,113 @@ hr {
                         font-size: 15px;
                         font-weight: 300;
                     }
+                }
 
+                #overflow-hidden-news-mb {
+                    border-radius: 10px;
+                    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+                    background-color: rgb(242, 242, 242);
+                    overflow: auto;
+                    cursor: pointer;
+                    transition: all 400ms ease 0s;
+
+                    &:hover {
+                        background-color: rgb(232, 232, 232);
+                        box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+                    }
+
+                    a {
+                        display: block;
+                        text-decoration: none;
+                        color: @color-black;
+                        margin: 20px 30px;
+
+                        &:hover {
+                            color: @color-red;
+                        }
+
+                        p {
+                            font-size: 18px;
+
+                            span {
+                                margin: 0px 0px 0px 15px;
+                                color: rgb(80, 80, 80);
+                                display: block;
+                                font-size: 13px;
+                            }
+                        }
+                    }
                 }
             }
         }
     }
-}
 
-.orange-nav ul {
-    list-style-image: url("");
+    #footer-mb {
+        margin-top: 10px;
+        padding-top: 4px;
+        background-color: rgb(242, 242, 242);
+
+        .footer-mb-class {
+            border-bottom: 1px solid rgb(230, 230, 230);
+            cursor: pointer;
+            position: relative;
+
+            h3 {
+                margin: 10px;
+                text-align: center;
+                font-weight: 400;
+            }
+
+            i {
+                position: absolute;
+                color: rgb(0, 0, 0);
+                margin: 0px 10px;
+                right: 2px;
+                top: 2px;
+            }
+        }
+
+        #one-answer {
+            height: 255px;
+        }
+
+        #two-answer {
+            height: 80px;
+        }
+
+        #three-answer {
+            height: 185px;
+        }
+
+        #four-answer {
+            height: 150px;
+        }
+
+        #five-answer {
+            height: 185px;
+        }
+
+        .answer {
+            overflow: hidden;
+            transition: all 200ms linear 0s;
+
+            div {
+                a {
+                    text-align: center;
+                    display: block;
+                    color: black;
+                    font-weight: 300;
+                    text-decoration: none;
+                    margin: 10px 20px;
+                    border-bottom: 1px solid rgb(230, 230, 230);
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
 }
 
 // desktop
@@ -1554,26 +1652,6 @@ hr {
                         }
                     }
                 }
-            }
-        }
-    }
-
-    // more button
-    #more {
-        button {
-            display: block;
-            margin: 0px auto 20px auto;
-            padding: 8px 70px;
-            font-weight: 400;
-            font-size: 16px;
-            background-color: transparent;
-            border: 1px solid black;
-
-            &:hover {
-                background-color: @color-red;
-                border: 1px solid @color-red;
-                color: white;
-                cursor: pointer;
             }
         }
     }
