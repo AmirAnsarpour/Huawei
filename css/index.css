@@ -84,8 +84,7 @@ hr {
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-bottom: 10px;
-    font-weight: 500;
+    margin-bottom: 5px;
   }
   #animate {
     position: fixed;
@@ -146,7 +145,7 @@ hr {
     transition: all 400ms ease 0s;
   }
   #services-mb .icon-services {
-    position: absolute;
+    position: fixed;
     top: 5px;
     right: 10px;
     color: #969696;
@@ -168,14 +167,13 @@ hr {
     overflow: auto;
     position: relative;
     z-index: 98;
-    scrollbar-width: thin;
-    transition: all 400ms ease 0s;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    transition: all 400ms ease 0s;
   }
   #services-mb #in-services-mb h2 {
-    font-weight: 300;
+    margin-bottom: -10px;
   }
   #services-mb #in-services-mb ul {
     display: flex;
@@ -224,21 +222,6 @@ hr {
     color: white;
     cursor: pointer;
   }
-  #services-mb #in-services-mb #bottom-link {
-    display: flex;
-  }
-  #services-mb #in-services-mb #bottom-link a {
-    display: inline-block;
-    margin: 30px auto;
-    color: #151515;
-    font-size: 20px;
-    font-weight: 300;
-    text-decoration: none;
-    text-align: center;
-  }
-  #services-mb #in-services-mb #bottom-link a:hover {
-    text-decoration: underline;
-  }
   #go-up-site {
     position: fixed;
     z-index: 90;
@@ -263,7 +246,7 @@ hr {
     position: fixed;
     opacity: 1;
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     left: 0;
     top: 0;
     backdrop-filter: blur(0.1px);
@@ -321,7 +304,7 @@ hr {
     position: fixed;
     opacity: 1;
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     left: 0;
     top: 0;
     backdrop-filter: blur(0.1px);
@@ -334,7 +317,7 @@ hr {
     z-index: 99;
     overflow: hidden;
     width: 97%;
-    padding: 30px;
+    padding: 30px 10px;
     left: 50%;
     bottom: 40%;
     transform: translate(-50%, 0);
@@ -647,17 +630,57 @@ hr {
     text-decoration: underline;
   }
   #footer-mb #bottom-footer-mb {
-    width: 60%;
-    margin: 0px auto;
+    width: 280px;
+    margin: 0 auto;
   }
   #footer-mb #bottom-footer-mb #top-flex-footer-mb {
     display: flex;
     justify-content: space-between;
   }
   #footer-mb #bottom-footer-mb #top-flex-footer-mb a {
-    color: black;
+    margin: 10px auto;
+    padding: 10px 0px;
+    color: #595757;
     text-decoration: none;
     font-weight: 200;
+    transition: all 200ms linear 0s;
+  }
+  #footer-mb #bottom-footer-mb #top-flex-footer-mb a:hover {
+    text-decoration: underline;
+    color: #2a2a2a;
+  }
+  #footer-mb #bottom-footer-mb #middle-icon-footer-mb {
+    display: flex;
+    justify-content: space-between;
+  }
+  #footer-mb #bottom-footer-mb #middle-icon-footer-mb a {
+    margin: 5px auto;
+    padding: 5px 0px;
+    font-size: 30px;
+    color: #595757;
+    text-decoration: none;
+    font-weight: 200;
+    transition: all 200ms linear 0s;
+  }
+  #footer-mb #bottom-footer-mb #middle-icon-footer-mb a:hover {
+    color: #2a2a2a;
+  }
+  #footer-mb #bottom-footer-mb #bootom-icon-fooeter-mb {
+    display: flex;
+    justify-content: space-between;
+  }
+  #footer-mb #bottom-footer-mb #bootom-icon-fooeter-mb a {
+    margin: 5px auto;
+    padding: 5px 0px;
+    font-size: 13px;
+    color: #595757;
+    text-decoration: none;
+    font-weight: 200;
+    transition: all 200ms linear 0s;
+  }
+  #footer-mb #bottom-footer-mb #bootom-icon-fooeter-mb a:hover {
+    text-decoration: underline;
+    color: #2a2a2a;
   }
 }
 @media all and (min-width: 992px) {
