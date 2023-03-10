@@ -181,6 +181,7 @@ hr {
     display: flex;
     justify-content: space-around;
     align-items: end;
+    overflow: hidden;
   }
   #services-mb #in-services-mb ul li {
     list-style: none;
@@ -517,7 +518,9 @@ hr {
   }
   #news-box-mb #in-news-box-mb > div:hover {
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.8);
-    filter: brightness(40%);
+  }
+  #news-box-mb #in-news-box-mb > div:hover img {
+    filter: brightness(80%);
   }
   #news-box-mb #in-news-box-mb > div .album-div-mb {
     padding: 10px;
@@ -585,7 +588,7 @@ hr {
   #footer-mb #bar-mb {
     margin: 10px auto;
     display: block;
-    width: 100%;
+    width: 90%;
     border: 1px solid #d2d2d2;
     background-color: white;
     transition: all 400ms ease 0s;
@@ -593,11 +596,7 @@ hr {
   #footer-mb #bar-mb #searchbar-mb {
     padding: 0px 0px 0px 15px;
     height: 45px;
-    width: 85%;
-    font-size: 16px;
-  }
-  #footer-mb #bar-mb i {
-    padding-left: 20px;
+    width: 100%;
     font-size: 16px;
   }
   #footer-mb #footer-faq .footer-mb-class {
@@ -647,9 +646,13 @@ hr {
   #footer-mb #footer-faq .answer div a:hover {
     text-decoration: underline;
   }
+  #footer-mb #bottom-footer-mb {
+    width: 60%;
+    margin: 0px auto;
+  }
   #footer-mb #bottom-footer-mb #top-flex-footer-mb {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
   }
   #footer-mb #bottom-footer-mb #top-flex-footer-mb a {
     color: black;
