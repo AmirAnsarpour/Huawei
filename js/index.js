@@ -2,19 +2,19 @@ $(document).ready(function () {
     document.documentElement.scrollTop = 0;
     // #cookies-box
     // #cookies-box span
-    // setTimeout(function () {
-    //     $("#cookies-box").removeClass("zero-height")
-    // }, 2000);
-    // $($("#cookies-box span")).click(function () {
-    //     $("#cookies-box").addClass("zero-height");
-    // });
+    setTimeout(function () {
+        $("#cookies-box").removeClass("zero-height")
+    }, 2000);
+    $($("#cookies-box span")).click(function () {
+        $("#cookies-box").addClass("zero-height");
+    });
 
-    // setTimeout(function () {
-    //     $("#follow-me").removeClass("zero-height")
-    // }, 180000);
-    // $($("#follow-me")).click(function () {
-    //     $("#follow-me").addClass("zero-height");
-    // });
+    setTimeout(function () {
+        $("#follow-me").removeClass("zero-height")
+    }, 180000);
+    $($("#follow-me")).click(function () {
+        $("#follow-me").addClass("zero-height");
+    });
 
     // First button "#one-black-navbar"
     // First button icon  "#one-black-navbar i:last-child"
