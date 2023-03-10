@@ -12,7 +12,7 @@ $(document).ready(function () {
     setTimeout(function () {
         $("#follow-me").removeClass("zero-height")
     }, 180000);
-    $($("#follow-me")).click(function () {
+    $($("#follow-me i")).click(function () {
         $("#follow-me").addClass("zero-height");
     });
 
