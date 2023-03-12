@@ -2,19 +2,19 @@ $(document).ready(function () {
     document.documentElement.scrollTop = 0;
     // #cookies-box
     // #cookies-box span
-    setTimeout(function () {
-        $("#cookies-box").removeClass("zero-height")
-    }, 2000);
-    $($("#cookies-box span")).click(function () {
-        $("#cookies-box").addClass("zero-height");
-    });
+    // setTimeout(function () {
+    //     $("#cookies-box").removeClass("zero-height")
+    // }, 2000);
+    // $($("#cookies-box span")).click(function () {
+    //     $("#cookies-box").addClass("zero-height");
+    // });
 
-    setTimeout(function () {
-        $("#follow-me").removeClass("zero-height")
-    }, 180000);
-    $($("#follow-me i")).click(function () {
-        $("#follow-me").addClass("zero-height");
-    });
+    // setTimeout(function () {
+    //     $("#follow-me").removeClass("zero-height")
+    // }, 180000);
+    // $($("#follow-me i")).click(function () {
+    //     $("#follow-me").addClass("zero-height");
+    // });
 
     // First button "#one-black-navbar"
     // First button icon  "#one-black-navbar i:last-child"
@@ -65,26 +65,35 @@ $(document).ready(function () {
     ////////////////////////////////////////////////////////////////////////
     // services
     $($("#services-icon")).click(function () {
-        $("#services").removeClass("zero-height")
-        $("#services-mb").removeClass("zero-height")
+        $("#services").removeClass("zero-height");
+        $("#services-mb").removeClass("zero-height");
     })
     $($(".icon-services")).click(function () {
-        $("#services").addClass("zero-height")
-        $("#services-mb").addClass("zero-height")
+        $("#services").addClass("zero-height");
+        $("#services-mb").addClass("zero-height");
     })
     // go top site 
     window.addEventListener("scroll", function () {
         if (document.documentElement.scrollTop > 400) {
-            $("#go-up-site").removeClass("zero-height")
+            $("#go-up-site").removeClass("zero-height");
         }
         else {
-            $("#go-up-site").addClass("zero-height")
+            $("#go-up-site").addClass("zero-height");
         }
     })
     $($("#go-up-site")).click(function () {
         document.documentElement.scrollTop = 0;
     })
-    ////////// navbar
+    ////////// navbar mobile
+    $($("#hamburger-mb #icon")).click(function () {
+        $("#hamburger-mb #icon").toggleClass("change");
+        if ($("#navbar-mobile-box").hasClass("zero-height")) {
+            $("#navbar-mobile-box").removeClass("zero-height");
+        }
+        else {
+            $("#navbar-mobile-box").addClass("zero-height");
+        }
+    })
     // img
     $($("#logo")).mouseenter(function () {
         $("#one-navbar-box").addClass("zero-height");
