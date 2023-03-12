@@ -357,6 +357,93 @@ hr {
   #cookies-box #in-cookies-box p a {
     color: #c7000b;
   }
+  #corporate-list-mobile {
+    top: 70px;
+    width: 100%;
+    position: fixed;
+    background-color: rgba(245, 245, 245, 0.98);
+    z-index: 91;
+    overflow: hidden;
+    height: 100vh;
+    bottom: 0;
+    box-shadow: 0px 0px 10px black;
+    transition: all 400ms ease 0s;
+  }
+  #corporate-list-mobile h4 {
+    cursor: pointer;
+    margin-top: 20px;
+    font-weight: 300;
+  }
+  #corporate-list-mobile h2 {
+    margin: 20px 5px;
+    font-weight: 400;
+    border-bottom: 1px solid rgba(125, 125, 125, 0.5);
+  }
+  #corporate-list-mobile ul {
+    margin: 10px 10px;
+    list-style: none;
+  }
+  #corporate-list-mobile ul li {
+    font-weight: 200;
+    cursor: pointer;
+    margin: 5px 0px;
+    padding: 8px 5px;
+    border-bottom: 1px solid rgba(125, 125, 125, 0.5);
+  }
+  #corporate-list-mobile ul li i {
+    transition: all 150ms linear 0s;
+  }
+  #corporate-list-mobile ul li:hover i {
+    padding-left: 5px;
+    color: #bc0000;
+  }
+  #Worldwide-mobile {
+    top: 70px;
+    width: 100%;
+    position: fixed;
+    background-color: rgba(245, 245, 245, 0.98);
+    z-index: 91;
+    overflow: hidden;
+    height: 100vh;
+    bottom: 0;
+    box-shadow: 0px 0px 10px black;
+    transition: all 400ms ease 0s;
+  }
+  #Worldwide-mobile h4 {
+    cursor: pointer;
+    margin-top: 20px;
+    font-weight: 300;
+  }
+  #Worldwide-mobile h2 {
+    margin: 20px 5px;
+    font-weight: 400;
+    border-bottom: 1px solid rgba(125, 125, 125, 0.3);
+  }
+  #Worldwide-mobile table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  #Worldwide-mobile table tr {
+    margin: 10px 10px;
+    list-style: none;
+  }
+  #Worldwide-mobile table tr td {
+    text-align: center;
+    border: 1px solid transparent;
+    font-weight: 200;
+    cursor: pointer;
+    margin: 5px 0px;
+    padding: 8px 5px;
+    border: 1px solid rgba(125, 125, 125, 0.1);
+    transition: all 400ms ease 0s;
+  }
+  #Worldwide-mobile table tr td:hover {
+    background-color: rgba(235, 235, 235, 0.98);
+  }
+  #Worldwide-mobile table tr td a {
+    text-decoration: none;
+    color: black;
+  }
   #navbar-mb {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.396);
     margin-bottom: 20px;
