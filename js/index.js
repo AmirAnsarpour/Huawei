@@ -62,6 +62,15 @@ $(document).ready(function () {
         }
     });
     // #three-black-navbar
+    $($("#three-black-navbar")).click(function () {
+        $("#login").removeClass("zero-height")
+    })
+    $($("#black-navbar-mobile-box-Login")).click(function () {
+        $("#login").removeClass("zero-height")
+    })
+    $($(".icon-login")).click(function () {
+        $("#login").addClass("zero-height");
+    })
     ////////////////////////////////////////////////////////////////////////
     // services
     $($("#services-icon")).click(function () {
