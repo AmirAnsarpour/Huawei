@@ -89,9 +89,25 @@ $(document).ready(function () {
         $("#hamburger-mb #icon").toggleClass("change");
         if ($("#navbar-mobile-box").hasClass("zero-height")) {
             $("#navbar-mobile-box").removeClass("zero-height");
+            $("#navbar-mobile-search-box").addClass("zero-width");
         }
         else {
             $("#navbar-mobile-box").addClass("zero-height");
+        }
+    })
+    //search mobile
+    $($("#search-top-icon-mb")).click(function () {
+        if ($("#navbar-mobile-search-box").hasClass("zero-width")) {
+            $("#navbar-mobile-search-box").removeClass("zero-width");
+            if ($("#navbar-mobile-box").hasClass("zero-height")) {
+            }
+            else {
+                $("#navbar-mobile-box").addClass("zero-height");
+                $("#hamburger-mb #icon").toggleClass("change");
+            }
+        }
+        else {
+            $("#navbar-mobile-search-box").addClass("zero-width");
         }
     })
     // img
