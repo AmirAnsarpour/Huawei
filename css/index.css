@@ -312,50 +312,44 @@ hr {
     text-decoration: underline;
   }
   #cookies-box {
-    position: fixed;
-    opacity: 1;
-    width: 100%;
-    height: 100vh;
-    left: 0;
-    top: 0;
-    backdrop-filter: blur(0.1px);
-    z-index: 97;
-    transition: all 200ms ease 0s;
-  }
-  #cookies-box #in-cookies-box {
-    position: fixed;
-    border-radius: 15px;
-    z-index: 97;
-    overflow: hidden;
-    width: 97%;
-    padding: 30px 10px;
-    left: 50%;
-    bottom: 50%;
-    transform: translate(-50%, 0);
-    background-color: rgba(0, 0, 0, 0.85);
-    backdrop-filter: blur(3px);
+    background-color: rgba(0, 0, 0, 0.95);
     color: white;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    position: fixed;
+    z-index: 99;
+    padding: 20px;
+    bottom: 0;
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    transition: all 200ms ease 0s;
+    overflow: hidden;
   }
-  #cookies-box #in-cookies-box span {
+  #cookies-box span i {
+    width: 5%;
+    padding: fit-content 10px;
     position: absolute;
-    top: 5px;
-    right: 15px;
-    color: #969696;
+    display: fixed;
+    line-height: 42px;
+    right: 20px;
     cursor: pointer;
-    font-size: 25px;
-    transition: all 200ms linear 0s;
+    font-weight: bold;
+    font-size: 18px;
   }
-  #cookies-box #in-cookies-box span:hover {
-    color: #ffffff;
+  #cookies-box p {
+    font-weight: 100;
+    width: 90%;
   }
-  #cookies-box #in-cookies-box p {
-    font-weight: 300;
-    font-size: 16px;
-    padding: 0px 20px;
-  }
-  #cookies-box #in-cookies-box p a {
+  #cookies-box p a {
     color: #c7000b;
+    text-decoration: none;
+    margin-left: 10px;
+    display: inline;
+  }
+  #cookies-box p a:hover {
+    text-decoration: underline;
+  }
+  #cookies-box p a i {
+    margin-left: 1px;
   }
   #corporate-list-mobile {
     top: 70px;
