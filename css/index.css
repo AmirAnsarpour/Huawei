@@ -247,6 +247,7 @@ hr {
     background-color: #525252;
   }
   #follow-me {
+    display: block !important;
     overflow: hidden;
     position: fixed;
     opacity: 1;
@@ -439,6 +440,7 @@ hr {
     color: black;
   }
   #login {
+    display: block !important;
     position: fixed;
     overflow: hidden;
     opacity: 1;
@@ -1081,6 +1083,7 @@ hr {
     }
   }
   #follow-me {
+    display: block !important;
     position: fixed;
     opacity: 1;
     overflow: hidden;
@@ -1415,6 +1418,7 @@ hr {
     text-decoration: underline;
   }
   #login {
+    display: block !important;
     position: fixed;
     overflow: hidden;
     opacity: 1;
