@@ -1,2 +1,2 @@
 # Huawei
-This is a practice project of Huawei website design with JavaScript (jQuery) 
+This is a practice project of Huawei website design with JavaScript (jQuery). (web-3)
