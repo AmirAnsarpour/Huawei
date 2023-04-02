@@ -28,6 +28,10 @@ hr {
   height: 0 !important;
   opacity: 0 !important;
 }
+.zero-width {
+  width: 0 !important;
+  opacity: 0 !important;
+}
 .title-hover-box {
   width: 100%;
   display: flex;
