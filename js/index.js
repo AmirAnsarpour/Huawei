@@ -36,7 +36,6 @@ $(document).ready(function () {
             $("#one-black-navbar i:last-child").removeClass("bi-chevron-up");
             $("#corporate-list").addClass("zero-height");
         }
-        ////////////////////////////////////////////////////////////////////
     });
 
     // Secend button "#two-black-navbar"
