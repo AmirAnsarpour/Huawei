@@ -117,44 +117,6 @@ hr {
         }
     }
 
-    #animate {
-        position: fixed;
-        background-color: rgb(197, 197, 197);
-        scrollbar-color: rgb(197, 197, 197) rgb(197, 197, 197);
-        width: 100%;
-        overflow: hidden;
-        height: 100vh;
-        bottom: 0;
-        top: 0;
-        color: rgb(20, 20, 20);
-        font-size: 30px;
-        z-index: 100;
-
-        div {
-            font-family: sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 90vh;
-            margin: auto;
-            animation: load 1000ms infinite 0s ease-in-out;
-            animation-direction: alternate;
-            text-shadow: 0 0 3px @color-white;
-
-            @keyframes load {
-                0% {
-                    opacity: 1;
-                }
-
-                100% {
-                    letter-spacing: 2px;
-                    opacity: 0.08;
-                    filter: blur(3px);
-                }
-            }
-        }
-    }
-
     #services-icon {
         position: fixed;
         z-index: 90;
@@ -1105,41 +1067,6 @@ hr {
                         color: @color-red;
                         margin-left: 5px;
                     }
-                }
-            }
-        }
-    }
-
-    #animate {
-        position: fixed;
-        background-color: rgb(197, 197, 197);
-        width: 100%;
-        height: 100vh;
-        bottom: 0;
-        top: 0;
-        color: rgb(20, 20, 20);
-        font-size: 70px;
-        z-index: 100;
-
-        div {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100%;
-            margin: auto;
-            animation: load 1000ms infinite 0s ease-in-out;
-            animation-direction: alternate;
-            text-shadow: 0 0 3px @color-white;
-
-            @keyframes load {
-                0% {
-                    opacity: 1;
-                }
-
-                100% {
-                    letter-spacing: 2px;
-                    opacity: 0.08;
-                    filter: blur(3px);
                 }
             }
         }
